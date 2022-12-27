@@ -1,12 +1,12 @@
 package at.hannibal2.skyhanni.features.nether.ashfang
 
 import at.hannibal2.skyhanni.SkyHanniMod
-import at.hannibal2.skyhanni.events.CheckRenderEntityEvent
 import at.hannibal2.skyhanni.events.ReceiveParticleEvent
 import at.hannibal2.skyhanni.features.damageindicator.BossType
 import at.hannibal2.skyhanni.features.damageindicator.DamageIndicatorManager
 import at.hannibal2.skyhanni.utils.ItemUtils.name
 import at.hannibal2.skyhanni.utils.LorenzUtils
+import io.github.moulberry.notenoughupdates.events.CheckRenderEntityEvent
 import io.github.moulberry.notenoughupdates.events.RenderParticleEvent
 import net.minecraft.entity.item.EntityArmorStand
 import net.minecraftforge.fml.common.eventhandler.EventPriority
@@ -51,7 +51,7 @@ class AshfangHideParticles {
     }
 
     @SubscribeEvent(priority = EventPriority.HIGH)
-    fun onCheckRender(event: CheckRenderEntityEvent<*>) {
+    fun onCheckRender(event: CheckRenderEntityEvent) {
         if (!isEnabled()) return
 
         val entity = event.entity

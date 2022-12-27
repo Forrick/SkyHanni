@@ -4,6 +4,7 @@ import at.hannibal2.skyhanni.SkyHanniMod
 import at.hannibal2.skyhanni.events.*
 import at.hannibal2.skyhanni.utils.LorenzUtils
 import at.hannibal2.skyhanni.utils.LorenzUtils.matchRegex
+import io.github.moulberry.notenoughupdates.events.CheckRenderEntityEvent
 import net.minecraft.client.Minecraft
 import net.minecraft.client.entity.EntityOtherPlayerMP
 import net.minecraft.entity.item.EntityArmorStand
@@ -71,7 +72,7 @@ class DungeonCleanEnd {
     }
 
     @SubscribeEvent
-    fun onCheckRender(event: CheckRenderEntityEvent<*>) {
+    fun onCheckRender(event: CheckRenderEntityEvent) {
         if (!shouldBlock()) return
 
         val entity = event.entity

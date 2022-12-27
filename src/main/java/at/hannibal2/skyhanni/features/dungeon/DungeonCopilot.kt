@@ -1,10 +1,14 @@
 package at.hannibal2.skyhanni.features.dungeon
 
 import at.hannibal2.skyhanni.SkyHanniMod
-import at.hannibal2.skyhanni.events.*
+import at.hannibal2.skyhanni.events.DungeonBossRoomEnterEvent
+import at.hannibal2.skyhanni.events.DungeonEnterEvent
+import at.hannibal2.skyhanni.events.DungeonStartEvent
+import at.hannibal2.skyhanni.events.LorenzChatEvent
 import at.hannibal2.skyhanni.utils.LorenzUtils
 import at.hannibal2.skyhanni.utils.LorenzUtils.matchRegex
 import at.hannibal2.skyhanni.utils.RenderUtils.renderString
+import io.github.moulberry.notenoughupdates.events.CheckRenderEntityEvent
 import net.minecraft.client.Minecraft
 import net.minecraft.entity.item.EntityArmorStand
 import net.minecraftforge.client.event.RenderGameOverlayEvent
@@ -80,7 +84,7 @@ class DungeonCopilot {
     }
 
     @SubscribeEvent
-    fun onCheckRender(event: CheckRenderEntityEvent<*>) {
+    fun onCheckRender(event: CheckRenderEntityEvent) {
         if (!LorenzUtils.inDungeons) return
 
         val entity = event.entity

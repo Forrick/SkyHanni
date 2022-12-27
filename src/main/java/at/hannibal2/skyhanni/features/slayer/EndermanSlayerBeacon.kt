@@ -1,13 +1,13 @@
 package at.hannibal2.skyhanni.features.slayer
 
 import at.hannibal2.skyhanni.SkyHanniMod
-import at.hannibal2.skyhanni.events.CheckRenderEntityEvent
 import at.hannibal2.skyhanni.features.damageindicator.BossType
 import at.hannibal2.skyhanni.features.damageindicator.DamageIndicatorManager
 import at.hannibal2.skyhanni.utils.*
 import at.hannibal2.skyhanni.utils.ItemUtils.name
 import at.hannibal2.skyhanni.utils.RenderUtils.drawColor
 import at.hannibal2.skyhanni.utils.RenderUtils.drawString
+import io.github.moulberry.notenoughupdates.events.CheckRenderEntityEvent
 import io.github.moulberry.notenoughupdates.events.PacketEvent
 import io.github.moulberry.notenoughupdates.events.RenderMobColoredEvent
 import io.github.moulberry.notenoughupdates.events.withAlpha
@@ -27,7 +27,7 @@ class EndermanSlayerBeacon {
     private val sittingBeacon = mutableListOf<LorenzVec>()
 
     @SubscribeEvent
-    fun onCheckRender(event: CheckRenderEntityEvent<*>) {
+    fun onCheckRender(event: CheckRenderEntityEvent) {
         val entity = event.entity
         if (entity in endermenWithBeacons || entity in flyingBeacons) return
 

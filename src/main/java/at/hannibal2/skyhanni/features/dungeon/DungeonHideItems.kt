@@ -2,7 +2,6 @@ package at.hannibal2.skyhanni.features.dungeon
 
 import at.hannibal2.skyhanni.SkyHanniMod
 import at.hannibal2.skyhanni.data.EntityMovementData
-import at.hannibal2.skyhanni.events.CheckRenderEntityEvent
 import at.hannibal2.skyhanni.events.EntityMoveEvent
 import at.hannibal2.skyhanni.events.ReceiveParticleEvent
 import at.hannibal2.skyhanni.utils.ItemUtils.cleanName
@@ -10,6 +9,7 @@ import at.hannibal2.skyhanni.utils.ItemUtils.getSkullTexture
 import at.hannibal2.skyhanni.utils.LorenzColor
 import at.hannibal2.skyhanni.utils.LorenzUtils
 import at.hannibal2.skyhanni.utils.getLorenzVec
+import io.github.moulberry.notenoughupdates.events.CheckRenderEntityEvent
 import io.github.moulberry.notenoughupdates.events.RenderMobColoredEvent
 import io.github.moulberry.notenoughupdates.events.ResetEntityHurtEvent
 import io.github.moulberry.notenoughupdates.events.withAlpha
@@ -56,7 +56,7 @@ class DungeonHideItems {
     }
 
     @SubscribeEvent
-    fun onCheckRender(event: CheckRenderEntityEvent<*>) {
+    fun onCheckRender(event: CheckRenderEntityEvent) {
         if (!LorenzUtils.inDungeons) return
 
         val entity = event.entity
