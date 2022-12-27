@@ -2,11 +2,11 @@ package at.hannibal2.skyhanni.features.dungeon
 
 import at.hannibal2.skyhanni.SkyHanniMod
 import at.hannibal2.skyhanni.events.LorenzChatEvent
-import at.hannibal2.skyhanni.events.PacketEvent
 import at.hannibal2.skyhanni.utils.*
 import at.hannibal2.skyhanni.utils.BlockUtils.getBlockAt
 import at.hannibal2.skyhanni.utils.RenderUtils.drawColor
 import at.hannibal2.skyhanni.utils.RenderUtils.drawString
+import io.github.moulberry.notenoughupdates.skyhanni.events.PacketEvent
 import net.minecraft.init.Blocks
 import net.minecraft.network.play.client.C08PacketPlayerBlockPlacement
 import net.minecraftforge.client.event.RenderWorldLastEvent
@@ -40,10 +40,11 @@ class DungeonHighlightClickedBlocks {
         if (!SkyHanniMod.feature.dungeon.highlightClickedBlocks) return
         if (!LorenzUtils.inDungeons) return
         if (DungeonData.inBossRoom) return
-        if (event.packet !is C08PacketPlayerBlockPlacement) return
-        if (event.packet.stack == null) return
+        val packet = event.packet
+        if (packet !is C08PacketPlayerBlockPlacement) return
+        if (packet.stack == null) return
 
-        val position = event.packet.position.toLorenzVec()
+        val position = packet.position.toLorenzVec()
 
         if (blocks.any { it.position == position }) return
 

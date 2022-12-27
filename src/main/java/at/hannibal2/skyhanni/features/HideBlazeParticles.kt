@@ -1,9 +1,9 @@
 package at.hannibal2.skyhanni.features
 
 import at.hannibal2.skyhanni.SkyHanniMod
-import at.hannibal2.skyhanni.events.RenderParticleEvent
 import at.hannibal2.skyhanni.utils.EntityUtils.getEntitiesNearby
 import at.hannibal2.skyhanni.utils.LorenzVec
+import io.github.moulberry.notenoughupdates.events.RenderParticleEvent
 import net.minecraft.client.Minecraft
 import net.minecraft.entity.monster.EntityBlaze
 import net.minecraft.util.EnumParticleTypes

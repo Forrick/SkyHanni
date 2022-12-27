@@ -1,8 +1,8 @@
 package at.hannibal2.skyhanni.features
 
 import at.hannibal2.skyhanni.SkyHanniMod
-import at.hannibal2.skyhanni.events.PacketEvent
 import at.hannibal2.skyhanni.utils.LorenzUtils
+import io.github.moulberry.notenoughupdates.skyhanni.events.PacketEvent
 import net.minecraft.client.Minecraft
 import net.minecraft.client.entity.EntityOtherPlayerMP
 import net.minecraft.client.entity.EntityPlayerSP

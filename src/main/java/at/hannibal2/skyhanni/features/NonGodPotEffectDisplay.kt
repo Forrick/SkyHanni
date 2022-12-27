@@ -2,7 +2,6 @@ package at.hannibal2.skyhanni.features
 
 import at.hannibal2.skyhanni.SkyHanniMod
 import at.hannibal2.skyhanni.events.LorenzChatEvent
-import at.hannibal2.skyhanni.events.PacketEvent
 import at.hannibal2.skyhanni.events.ProfileApiDataLoadedEvent
 import at.hannibal2.skyhanni.test.GriffinJavaUtils
 import at.hannibal2.skyhanni.utils.ItemUtils.getLore
@@ -10,6 +9,7 @@ import at.hannibal2.skyhanni.utils.ItemUtils.name
 import at.hannibal2.skyhanni.utils.LorenzUtils
 import at.hannibal2.skyhanni.utils.RenderUtils.renderStrings
 import at.hannibal2.skyhanni.utils.StringUtils
+import io.github.moulberry.notenoughupdates.skyhanni.events.PacketEvent
 import net.minecraft.network.play.server.S30PacketWindowItems
 import net.minecraft.network.play.server.S47PacketPlayerListHeaderFooter
 import net.minecraftforge.client.event.RenderGameOverlayEvent

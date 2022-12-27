@@ -3,11 +3,11 @@ package at.hannibal2.skyhanni.features.slayer.blaze
 import at.hannibal2.skyhanni.SkyHanniMod
 import at.hannibal2.skyhanni.events.CheckRenderEntityEvent
 import at.hannibal2.skyhanni.events.ReceiveParticleEvent
-import at.hannibal2.skyhanni.events.RenderParticleEvent
 import at.hannibal2.skyhanni.features.damageindicator.BossType
 import at.hannibal2.skyhanni.features.damageindicator.DamageIndicatorManager
 import at.hannibal2.skyhanni.utils.EntityUtils.hasSkullTexture
 import at.hannibal2.skyhanni.utils.LorenzUtils
+import io.github.moulberry.notenoughupdates.events.RenderParticleEvent
 import net.minecraft.entity.item.EntityArmorStand
 import net.minecraft.entity.projectile.EntityFireball
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent

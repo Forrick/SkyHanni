@@ -3,12 +3,12 @@ package at.hannibal2.skyhanni.features.event.diana
 import at.hannibal2.skyhanni.events.BurrowDetectEvent
 import at.hannibal2.skyhanni.events.BurrowDugEvent
 import at.hannibal2.skyhanni.events.LorenzChatEvent
-import at.hannibal2.skyhanni.events.PacketEvent
 import at.hannibal2.skyhanni.utils.BlockUtils.getBlockAt
 import at.hannibal2.skyhanni.utils.ItemUtils.getInternalName
 import at.hannibal2.skyhanni.utils.LorenzUtils
 import at.hannibal2.skyhanni.utils.LorenzVec
 import at.hannibal2.skyhanni.utils.toLorenzVec
+import io.github.moulberry.notenoughupdates.skyhanni.events.PacketEvent
 import net.minecraft.client.Minecraft
 import net.minecraft.init.Blocks
 import net.minecraft.item.ItemStack
