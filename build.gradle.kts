@@ -50,12 +50,6 @@ dependencies {
     mappings("de.oceanlabs.mcp:mcp_stable:22-1.8.9")
     forge("net.minecraftforge:forge:1.8.9-11.15.1.2318-1.8.9")
 
-    // If you don't want mixins, remove these lines
-    shadowImpl("org.spongepowered:mixin:0.7.11-SNAPSHOT") {
-        isTransitive = false
-    }
-    annotationProcessor("org.spongepowered:mixin:0.8.4-SNAPSHOT")
-
     implementation(kotlin("stdlib-jdk8"))
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
 
@@ -70,11 +64,7 @@ dependencies {
 loom {
     launchConfigs {
         "client" {
-            // If you don't want mixins, remove these lines
-            property("mixin.debug", "true")
             property("asmhelper.verbose", "true")
-            arg("--tweakClass", "org.spongepowered.asm.launch.MixinTweaker")
-            arg("--mixin", "mixins.skyhanni.json")
             val modFiles = devenvMod
                 .incoming.artifacts.resolvedArtifacts.get()
             arg("--mods", modFiles.joinToString(",") { it.file.relativeTo(file("run")).path })
@@ -82,12 +72,6 @@ loom {
     }
     forge {
         pack200Provider.set(dev.architectury.pack200.java.Pack200Adapter())
-        // If you don't want mixins, remove this lines
-        mixinConfig("mixins.skyhanni.json")
-    }
-    // If you don't want mixins, remove these lines
-    mixin {
-        defaultRefmapName.set("mixins.skyhanni.refmap.json")
     }
 }
 
@@ -103,10 +87,6 @@ tasks.withType(Jar::class) {
     manifest.attributes.run {
         this["FMLCorePluginContainsFMLMod"] = "true"
         this["ForceLoadAsMod"] = "true"
-
-        // If you don't want mixins, remove these lines
-        this["TweakClass"] = "org.spongepowered.asm.launch.MixinTweaker"
-        this["MixinConfigs"] = "mixins.skyhanni.json"
     }
 }
 
