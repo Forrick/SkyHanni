@@ -1,7 +1,6 @@
 package at.hannibal2.skyhanni.features.inventory
 
 import at.hannibal2.skyhanni.SkyHanniMod
-import at.hannibal2.skyhanni.events.GuiContainerEvent
 import at.hannibal2.skyhanni.events.RenderItemTipEvent
 import at.hannibal2.skyhanni.utils.InventoryUtils
 import at.hannibal2.skyhanni.utils.ItemUtils.getLore
@@ -11,6 +10,7 @@ import at.hannibal2.skyhanni.utils.LorenzUtils
 import at.hannibal2.skyhanni.utils.LorenzUtils.between
 import at.hannibal2.skyhanni.utils.RenderUtils.highlight
 import at.hannibal2.skyhanni.utils.StringUtils.removeColor
+import io.github.moulberry.notenoughupdates.skyhanni.events.GuiContainerEvent
 import net.minecraft.client.Minecraft
 import net.minecraft.client.gui.inventory.GuiChest
 import net.minecraft.inventory.ContainerChest

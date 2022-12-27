@@ -1,10 +1,10 @@
 package at.hannibal2.skyhanni.features.inventory
 
 import at.hannibal2.skyhanni.SkyHanniMod
-import at.hannibal2.skyhanni.events.GuiContainerEvent
 import at.hannibal2.skyhanni.utils.ItemUtils.getInternalName
 import at.hannibal2.skyhanni.utils.RenderUtils.highlight
 import at.hannibal2.skyhanni.utils.RenderUtils.interpolate
+import io.github.moulberry.notenoughupdates.skyhanni.events.GuiContainerEvent
 import net.minecraftforge.client.event.ClientChatReceivedEvent
 import net.minecraftforge.event.world.WorldEvent
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent

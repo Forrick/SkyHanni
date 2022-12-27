@@ -3,7 +3,6 @@ package at.hannibal2.skyhanni.features.inventory
 import at.hannibal2.skyhanni.SkyHanniMod
 import at.hannibal2.skyhanni.data.ItemRenderBackground.Companion.background
 import at.hannibal2.skyhanni.data.VanillaItemManager
-import at.hannibal2.skyhanni.events.GuiContainerEvent
 import at.hannibal2.skyhanni.events.RepositoryReloadEvent
 import at.hannibal2.skyhanni.features.bazaar.BazaarApi
 import at.hannibal2.skyhanni.utils.*
@@ -12,6 +11,7 @@ import at.hannibal2.skyhanni.utils.ItemUtils.getInternalName
 import at.hannibal2.skyhanni.utils.ItemUtils.getLore
 import at.hannibal2.skyhanni.utils.StringUtils.removeColor
 import com.google.gson.JsonObject
+import io.github.moulberry.notenoughupdates.skyhanni.events.GuiContainerEvent
 import net.minecraft.client.Minecraft
 import net.minecraft.client.gui.inventory.GuiChest
 import net.minecraft.inventory.ContainerChest

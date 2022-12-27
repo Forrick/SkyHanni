@@ -1,11 +1,11 @@
 package at.hannibal2.skyhanni.data
 
-import at.hannibal2.skyhanni.events.DrawScreenAfterEvent
 import at.hannibal2.skyhanni.events.GuiRenderItemEvent
 import at.hannibal2.skyhanni.events.RenderInventoryItemTipEvent
 import at.hannibal2.skyhanni.events.RenderItemTipEvent
-import at.hannibal2.skyhanni.mixins.transformers.gui.AccessorGuiContainer
 import at.hannibal2.skyhanni.utils.LorenzUtils
+import io.github.moulberry.notenoughupdates.mixins.AccessorGuiContainer
+import io.github.moulberry.notenoughupdates.skyhanni.events.DrawScreenAfterEvent
 import net.minecraft.client.Minecraft
 import net.minecraft.client.gui.inventory.GuiChest
 import net.minecraft.client.renderer.GlStateManager

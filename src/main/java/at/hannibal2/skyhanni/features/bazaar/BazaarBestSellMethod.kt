@@ -1,11 +1,11 @@
 package at.hannibal2.skyhanni.features.bazaar
 
 import at.hannibal2.skyhanni.SkyHanniMod
-import at.hannibal2.skyhanni.events.GuiContainerEvent
 import at.hannibal2.skyhanni.utils.ItemUtils.getLore
 import at.hannibal2.skyhanni.utils.LorenzUtils
 import at.hannibal2.skyhanni.utils.NumberUtil
 import at.hannibal2.skyhanni.utils.RenderUtils.renderString
+import io.github.moulberry.notenoughupdates.skyhanni.events.GuiContainerEvent
 import net.minecraft.client.gui.inventory.GuiChest
 import net.minecraft.inventory.ContainerChest
 import net.minecraftforge.client.event.GuiScreenEvent
