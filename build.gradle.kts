@@ -58,8 +58,8 @@ dependencies {
 
 //    devenvMod("com.github.notenoughupdates:notenoughupdates:5a354b5:all")
 
-    implementation(files("libs/NotEnoughUpdates-2.1.1+8fb89f2.dirty-dep.jar"))
-    devenvMod(files("libs/NotEnoughUpdates-2.1.1+8fb89f2.dirty-dep.jar"))
+    implementation(files("libs/NotEnoughUpdates-2.1.1+e4d106a.dirty-dep.jar"))
+    devenvMod(files("libs/NotEnoughUpdates-2.1.1+e4d106a.dirty-dep.jar"))
 }
 
 // Minecraft configuration:

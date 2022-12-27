@@ -1,10 +1,10 @@
 package at.hannibal2.skyhanni.data
 
-import at.hannibal2.skyhanni.events.GuiRenderItemEvent
 import at.hannibal2.skyhanni.events.RenderInventoryItemTipEvent
 import at.hannibal2.skyhanni.events.RenderItemTipEvent
 import at.hannibal2.skyhanni.utils.LorenzUtils
 import io.github.moulberry.notenoughupdates.events.DrawScreenAfterEvent
+import io.github.moulberry.notenoughupdates.events.GuiRenderItemOverlayEvent
 import io.github.moulberry.notenoughupdates.mixins.AccessorGuiContainer
 import net.minecraft.client.Minecraft
 import net.minecraft.client.gui.inventory.GuiChest
@@ -15,7 +15,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent
 class ItemTipHelper {
 
     @SubscribeEvent
-    fun onRenderItemOverlayPost(event: GuiRenderItemEvent.RenderOverlayEvent.Post) {
+    fun onRenderItemOverlayPost(event: GuiRenderItemOverlayEvent) {
         val stack = event.stack ?: return
         if (!LorenzUtils.inSkyblock || stack.stackSize != 1) return
 
