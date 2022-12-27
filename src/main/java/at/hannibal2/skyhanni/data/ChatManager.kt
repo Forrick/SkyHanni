@@ -2,10 +2,9 @@ package at.hannibal2.skyhanni.data
 
 import at.hannibal2.skyhanni.events.LorenzActionBarEvent
 import at.hannibal2.skyhanni.events.LorenzChatEvent
-//import io.github.moulberry.notenoughupdates.skyhanni.events.PacketEvent
 import at.hannibal2.skyhanni.utils.LorenzLogger
 import at.hannibal2.skyhanni.utils.LorenzUtils
-import io.github.moulberry.notenoughupdates.skyhanni.events.PacketEvent
+import io.github.moulberry.notenoughupdates.events.PacketEvent
 import net.minecraft.network.play.server.S02PacketChat
 import net.minecraftforge.client.event.ClientChatReceivedEvent
 import net.minecraftforge.fml.common.eventhandler.EventPriority

@@ -8,7 +8,7 @@ import at.hannibal2.skyhanni.utils.ItemUtils.getInternalName
 import at.hannibal2.skyhanni.utils.LorenzUtils
 import at.hannibal2.skyhanni.utils.LorenzVec
 import at.hannibal2.skyhanni.utils.toLorenzVec
-import io.github.moulberry.notenoughupdates.skyhanni.events.PacketEvent
+import io.github.moulberry.notenoughupdates.events.PacketEvent
 import net.minecraft.client.Minecraft
 import net.minecraft.init.Blocks
 import net.minecraft.item.ItemStack

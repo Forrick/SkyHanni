@@ -3,7 +3,7 @@ package at.hannibal2.skyhanni.features.commands
 import at.hannibal2.skyhanni.SkyHanniMod
 import at.hannibal2.skyhanni.utils.LorenzUtils
 import at.hannibal2.skyhanni.utils.OSUtils
-import io.github.moulberry.notenoughupdates.skyhanni.events.PacketEvent
+import io.github.moulberry.notenoughupdates.events.PacketEvent
 import net.minecraft.network.play.client.C01PacketChatMessage
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent
 

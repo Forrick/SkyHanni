@@ -4,8 +4,8 @@ import at.hannibal2.skyhanni.events.GuiRenderItemEvent
 import at.hannibal2.skyhanni.events.RenderInventoryItemTipEvent
 import at.hannibal2.skyhanni.events.RenderItemTipEvent
 import at.hannibal2.skyhanni.utils.LorenzUtils
+import io.github.moulberry.notenoughupdates.events.DrawScreenAfterEvent
 import io.github.moulberry.notenoughupdates.mixins.AccessorGuiContainer
-import io.github.moulberry.notenoughupdates.skyhanni.events.DrawScreenAfterEvent
 import net.minecraft.client.Minecraft
 import net.minecraft.client.gui.inventory.GuiChest
 import net.minecraft.client.renderer.GlStateManager

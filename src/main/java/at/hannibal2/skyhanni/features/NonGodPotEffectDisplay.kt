@@ -9,7 +9,7 @@ import at.hannibal2.skyhanni.utils.ItemUtils.name
 import at.hannibal2.skyhanni.utils.LorenzUtils
 import at.hannibal2.skyhanni.utils.RenderUtils.renderStrings
 import at.hannibal2.skyhanni.utils.StringUtils
-import io.github.moulberry.notenoughupdates.skyhanni.events.PacketEvent
+import io.github.moulberry.notenoughupdates.events.PacketEvent
 import net.minecraft.network.play.server.S30PacketWindowItems
 import net.minecraft.network.play.server.S47PacketPlayerListHeaderFooter
 import net.minecraftforge.client.event.RenderGameOverlayEvent

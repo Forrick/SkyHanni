@@ -9,7 +9,7 @@ import at.hannibal2.skyhanni.utils.LorenzDebug
 import at.hannibal2.skyhanni.utils.LorenzLogger
 import at.hannibal2.skyhanni.utils.LorenzUtils
 import at.hannibal2.skyhanni.utils.RenderUtils.renderString
-import io.github.moulberry.notenoughupdates.skyhanni.events.PacketEvent
+import io.github.moulberry.notenoughupdates.events.PacketEvent
 import net.minecraft.nbt.NBTTagCompound
 import net.minecraftforge.client.event.RenderGameOverlayEvent
 import net.minecraftforge.common.MinecraftForge
