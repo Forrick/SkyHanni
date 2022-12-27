@@ -1,5 +1,9 @@
 # SkyHanni - Change Log
 
+## Version 0.13
+### Requires a custom NEU version (This is still a workaround)
++ Add Support for the newest Alpha version of NEU
+
 ## Version 0.12.2
 
 ### Changes
